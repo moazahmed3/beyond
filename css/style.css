@@ -1,0 +1,400 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #000;
+  --sec-color: #ffffff;
+  --text-color: #6d6d6d;
+}
+
+/* global style */
+h1,
+h2 {
+  font-family: "Monda", sans-serif;
+}
+
+h3,
+p,
+a {
+  font-family: "Inter", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  width: 85%;
+  margin: auto;
+}
+/* =================================== start navbar ============================= */
+.navbar {
+  padding: 20px 0;
+  background-color: var(--main-color);
+}
+.navbar .inner-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar img {
+  width: 42px;
+}
+
+.navbar .inner-navbar .nav-list {
+  display: flex;
+  gap: 20px;
+}
+.navbar .inner-navbar .nav-list a {
+  color: #fff;
+  transition: 0.3s;
+}
+.navbar .inner-navbar .nav-list a:hover {
+  color: #0a39b6;
+}
+.navbar .form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.navbar .form select {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+}
+.navbar .form .btn {
+  border: #fff 2px solid;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #fff;
+  transition: 0.3s;
+}
+.navbar .form .btn:hover {
+  background-color: #0a39b6;
+}
+/* =================================== end navbar ============================= */
+
+/* =================================== start hero ============================= */
+.hero {
+  background-color: var(--main-color);
+  height: 100vh;
+}
+.hero .inner-hero {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.hero .hero-content {
+  padding: 0 80px;
+}
+.hero .hero-content h1 {
+  font-size: 86px;
+  color: var(--sec-color);
+  line-height: 90px;
+  margin-bottom: 41px;
+}
+.hero .hero-content p {
+  color: var(--sec-color);
+  font-size: 20px;
+}
+
+.hero .hero-content span {
+  color: var(--sec-color);
+}
+
+.hero .get-started {
+  margin-top: 45px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 25px;
+}
+.hero .inner-hero .get-started img {
+  width: 40px;
+}
+.hero .circle-arrow {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #003c95;
+  cursor: pointer;
+}
+
+.hero-img {
+  height: 100%;
+  width: 100%;
+}
+
+.hero-img img {
+  height: 100%;
+}
+/* =================================== end hero ============================= */
+/* =================================== start counter ============================= */
+.counter {
+  background-color: #1c1c1c;
+  padding: 75px 0;
+}
+
+.counter .inner-counter {
+  display: flex;
+  color: var(--sec-color);
+  justify-content: space-between;
+}
+.counter .inner-counter .item {
+  text-align: center;
+}
+.counter .inner-counter .item h3 {
+  font-size: 55px;
+  margin-bottom: 12px;
+}
+.counter .inner-counter .item h6 {
+  font-size: 20px;
+}
+/* =================================== end counter ============================= */
+
+/* =================================== start advantages ============================= */
+.advantages {
+  padding: 100px 0;
+
+  background-color: var(--main-color);
+  color: var(--sec-color);
+}
+.advantages .header-advantages {
+  text-align: center;
+}
+.advantages .header-advantages h3 {
+  font-size: 30px;
+}
+
+.advantages .header-advantages p {
+  margin-top: 15px;
+}
+
+.advantages .cards {
+  margin-top: 60px;
+  display: flex;
+  gap: 34px;
+}
+
+.advantages .cards .card .inner-card {
+  background-color: #181619;
+  padding: 56px;
+  border-radius: 5px;
+  height: 100%;
+}
+.advantages .cards .card img {
+  width: 40px;
+}
+
+.advantages .cards .card h4 {
+  font-size: 29px;
+  padding: 28px 0;
+}
+
+.advantages .cards .card p {
+  color: #6d6d6d;
+}
+.vip {
+  border-bottom: 2px solid #0a39b6;
+}
+/* =================================== end advantages ============================= */
+
+/* =================================== start advantages ============================= */
+.features {
+  padding: 160px 0;
+  background-image: url("../img/bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+}
+.inner-features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.features span {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  align-self: center;
+}
+.features img {
+  width: 40px;
+}
+.features h2 {
+  font-size: 86px;
+  text-transform: capitalize;
+  line-height: 80px;
+}
+/* =================================== end advantages ============================= */
+/* =================================== start power ============================= */
+.power {
+  padding: 100px 0;
+  background-color: var(--main-color);
+}
+.power .header-power {
+  text-align: center;
+  color: var(--sec-color);
+}
+.power .header-power h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.power .header-power p {
+  max-width: 75%;
+  margin: auto;
+}
+.power .items {
+  margin-top: 93px;
+  display: flex;
+  gap: 34px;
+}
+
+/* =================================== end power ============================= */
+/* =================================== start details ============================= */
+
+.details {
+  padding: 75px 0;
+  background-color: var(--main-color);
+}
+
+.details .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--sec-color);
+  margin-bottom: 78px;
+}
+
+.details .item span {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.details .item span:hover {
+  background-color: #003c95;
+  transform: rotate(90deg);
+}
+.details .item h5 {
+  width: 25%;
+  font-size: 36px;
+}
+.details .item p {
+  width: 50%;
+  line-height: 27px;
+  font-size: 14px;
+  text-align: start;
+}
+.details .item img {
+  width: 40px;
+}
+
+/* =================================== end details ============================= */
+/* =================================== start forward ============================= */
+.forward {
+  background-image: url("../img/bg.png");
+  padding: 120px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.forward .content {
+  color: var(--sec-color);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+.forward .content h2 {
+  font-size: 86px;
+}
+.forward .content span {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.forward .content span:hover {
+  background-color: #003c95;
+  transform: rotate(90deg);
+}
+.forward .content img {
+  width: 40px;
+}
+/* =================================== end forward ============================= */
+
+/* =================================== start footer ============================= */
+.footer {
+  padding: 27px 0;
+  background-color: #1b1d1c;
+}
+
+.inner-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .logo {
+  width: 40px;
+}
+.footer .footer-list {
+  display: flex;
+  gap: 20px;
+}
+.footer .footer-list a {
+  color: #fff;
+  transition: 0.3s;
+}
+.footer .footer-list a:hover {
+  color: #0a39b6;
+}
+
+.footer .medai {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
+.footer .medai span{
+    cursor: pointer;
+}
+.footer .medai img {
+  width: 18px;
+}
+
+/* =================================== end footer ============================= */
